@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Calligraffitti&family=Caveat&family=Marck+Script&family=Rosarivo:ital@1&display=swap');
+/* font-family: 'Allura', cursive;  */
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Calligraffitti&family=Caveat&family=Emblema+One&family=Marck+Script&family=Rosarivo:ital@1&display=swap');
+/* font-family: 'Emblema One', cursive; */
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html{
+    font-size: 68.5%;
+}
+body{
+    background-image:    linear-gradient( rgba(41, 40, 40, 0.405) , rgba(0, 0, 0, 0.192))  ,     url(../image/background1.jpg);
+    background-size: contain;
+    overflow-x: hidden;
+}
+.name{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 30px;
+    font-family: 'Allura', cursive;
+    color: white;
+}
+.imageSectioin{
+    width: 100vw;
+    height: 100%; /* taku lagal flex wrap beta khuarawa be kesha */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: rgba(134, 134, 134, 0.316);
+    flex-wrap: wrap;
+}
+.sectionH{
+    /* background-color: brown; */
+    text-align: center;
+    color: white;
+    margin: 20px 0px;
+}
+.imageSectioin a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.832);
+    width: 190px;
+    height: 190px;
+    border-radius: 20px;
+    margin: 10px 20px;
+}
+.imageSectioin a:hover{
+    background-color: white;
+    color: black;
+    transition: .3s ease-in-out;
+}
+.imageSectioin a img{
+    width: 80px;
+    height: 80px;
+}
+footer{
+    margin-top: 70px;
+    background-color: black;
+    width: 100vw;
+    height: 40vh;
+    color: white;
+    text-align: center;
+}
+footer h1{
+    font-family: 'Emblema One', cursive;
+}
+footer .accounts img{
+    margin: 30px 15px;
+    width: 20px;
+    height: 20px;
+}
+footer .phone {
+    font-size: large;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+footer .phone a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    text-decoration: none;
+    color: white;
+}
+footer .phone img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+footer .accounts img:hover, footer .phone a:hover{
+    background-color: rgb(108, 221, 255);
+    transition: .3s ease-in-out;
+}
+nav{
+    width: 100vw;
+    height: 15vh;
+    /* background-color: ; */
+    background-image: linear-gradient( to bottom, transparent  50%,   rgb(42, 52, 55) 50% );
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0%;
+}
+nav a{
+    color: white;
+    width: 50px;
+    height: 50px;
+    margin: 0px 10vw;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: rgb(42, 52, 55);
+    border-radius: 10px;
+}
+nav a i:hover{
+    color: rgb(108, 221, 255);
+    transition: .15s ease-in-out;
+}
+@media screen and (max-width:460px) {
+    .imageSectioin a{
+        width: 90px;
+        height: 90px;
+    }
+    .imageSectioin h1{
+        font-size: 10px;
+    }
+    .imageSectioin a img{
+        width: 60px;
+        height: 60px;
+    }
+    footer .phone a{
+        font-size: 10px;
+    }
+    nav a{
+        margin: 0px 5vw;
+    }
+}

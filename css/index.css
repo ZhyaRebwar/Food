@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Calligraffitti&family=Caveat&family=Marck+Script&family=Rosarivo:ital@1&display=swap');
+/* font-family: 'Allura', cursive;  */
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Calligraffitti&family=Caveat&family=Emblema+One&family=Marck+Script&family=Rosarivo:ital@1&display=swap');
+/* font-family: 'Emblema One', cursive; */
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html{
+    font-size: 68.5%;
+}
+body{
+    background-image:  url(../image/background1.jpg);
+    background-size: contain;
+    overflow-x: hidden;
+}
+.name{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 30px;
+    font-family: 'Allura', cursive;
+    color: white;
+    background-color: rgba(42, 52, 55, 0.581);
+}
+.imageSectioin{
+    width: 100vw;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.topImg{
+    width: 30vw;
+    height: 50%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.topImg img{
+    width: 170px;
+    height: 170px;
+    background-color: transparent;
+}
+.bottomImg{
+    width: 100vw;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.leftImg{
+    width: 30vw;
+    height: 100%;
+    background-color: white;
+    margin: 0%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.leftImg img{
+    width: 170px;
+    height: 170px;
+    background-color: transparent;
+}
+.rightImg{
+    width: 30vw;
+    height: 100%;
+    background-color: white;
+    margin: 0%;
+    display: flex;
+    flex-direction: row; /* babe ama na dakawta nawarast */
+    align-content: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.rightImg img{
+    width: 170px;
+    height: 170px;
+    background-color: transparent;
+}
+footer{
+    margin-top: 80px;
+    background-color: black;
+    width: 100vw;
+    height: 40vh;
+    color: white;
+    text-align: center;
+}
+footer h1{
+    font-family: 'Emblema One', cursive;
+}
+footer .accounts img{
+    margin: 30px 15px;
+    width: 20px;
+    height: 20px;
+}
+footer .phone {
+    font-size: large;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+footer .phone a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    text-decoration: none;
+    color: white;
+}
+footer .phone img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+footer .accounts img:hover, footer .phone a:hover{
+    background-color: rgb(108, 221, 255);
+    transition: .3s ease-in-out;
+}
+nav{
+    width: 100vw;
+    height: 15vh;
+    /* background-color: ; */
+    background-image: linear-gradient( to bottom, transparent  50%,   rgb(42, 52, 55) 50% );
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0%;
+}
+nav a{
+    color: white;
+    width: 50px;
+    height: 50px;
+    margin: 0px 10vw;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: rgb(42, 52, 55);
+    border-radius: 10px;
+}
+nav a i:hover{
+    color: rgb(108, 221, 255);
+    transition: .15s ease-in-out;
+}
+@media screen and (max-width:566px) {
+    .rightImg img,.leftImg img, .topImg img{
+        width: 110px;
+        height: 110px;;
+    }
+    .rightImg img{
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width:427px) {
+    .rightImg img,.leftImg img, .topImg img{
+        width: 85px;
+        height: 85px;;
+    }
+    .rightImg img{
+        margin-top: 11px;
+    }
+    .rightImg , .leftImg , .topImg{
+        border-radius: 200px;
+        width: 20vw;
+        height: 55%;
+        padding: 0px 50px;
+    }
+    .topImg{
+        height: 30%;
+    }
+    footer .phone a{
+        font-size: 10px;
+    }
+    nav a{
+        margin: 0px 5vw;
+    }
+}
